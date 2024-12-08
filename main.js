@@ -61,10 +61,11 @@ function agregarTarea(tarea, id, hecho, eliminar) {
     lista.insertAdjacentHTML("beforeend", elemento);
 }
 function tareaRealizada(element) {
-    element.classlist.toggle(check);
-    element.classlist.toggle(uncheck);
-    element.parentNode.querySelector('.text').classlist.toggle(tachado);
-    LIST[element.id].realizado = LIST[element.id].realizado ?false :true;
+    element.classList.toggle(check);
+    element.classList.toggle(uncheck);
+    element.parentNode.querySelector('.text').classList.toggle(tachado);
+    const id = element.parentNode.id;
+    LIST[id].hecho = !LIST[id].hecho;
 };
 
 function tareaEliminada(element) {
