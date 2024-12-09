@@ -69,7 +69,7 @@ body{
     margin-bottom: 20px;
 }
 .tareas{
-    font-size: 25px;
+    font-size: 23px;
 }
 .tareas li{
     background-color: var(--color-fuente);
@@ -90,3 +90,4 @@ body{
     text-decoration: line-through;
     color: var(--color-input);
 }
+
